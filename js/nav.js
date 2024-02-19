@@ -13,16 +13,16 @@ let nav = `
                     <!-- dropdown menu -->
                     <ul class="dropdown__menu">
                         <li class="menu__item">
-                            <a class="item__link" href=js1.html>JavaScript Drum kit</a>
+                            <a class="item__link" href="01-JSDrumkit/index.html">JavaScript Drum kit</a>
                         </li>
                         <li class="menu__item">
-                            <a class="item__link" href=js2.html>Founder</a>
+                            <a class="item__link" href="02-JSDrumkit/index.html">Founder</a>
                         </li>
                         <li class="menu__item dropdown__subItem">
                             <a class="item__link">3~10</a>
                             <ul class="dropdown__subMenu">
                                 <li class="menu__item">
-                                    <a class="item__link" href=js3.html>3</a>
+                                    <a class="item__link" href="02-JSDrumkit/index.html">3</a>
                                 </li>
                                 <li class="menu__item">
                                     <a class="item__link">4</a>
