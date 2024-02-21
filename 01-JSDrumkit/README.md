@@ -1,4 +1,5 @@
-# Drum kit
+# Drum kit 
+只要是透過JS的event監聽HTML的標籤屬性，並做出相對應的變化
 ---
 ### html架構
 - 每個按鍵都用div包住，並附加 `date-key` 的屬性，以此對應keycode的方式
