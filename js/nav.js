@@ -1,5 +1,5 @@
 let nav = `
-<h1 class="logo"><a href="../index.html">LOGO</a></h1>
+<h1 class="logo"><a href="../../index.html">LOGO</a></h1>
 
 <ul class="menu">
                 <!--- item1 -->
@@ -17,6 +17,9 @@ let nav = `
                         </li>
                         <li class="menu__item">
                             <a class="item__link" href="../02-CSS+JS Clock/index.html">CSS+JS Clock</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="item__link" href="../03-css variables and js/index.html">css variables and js</a>
                         </li>
                         <li class="menu__item dropdown__subItem">
                             <a class="item__link">3~10</a>

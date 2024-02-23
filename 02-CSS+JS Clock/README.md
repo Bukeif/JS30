@@ -1,4 +1,6 @@
 # CSS + JS Clock 
+
+利用CSS和JS刻出一個簡單的時鐘特效
 ---
 ### CSS
 - `transform : rotate(90deg);` :旋轉角度
