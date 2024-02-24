@@ -21,6 +21,9 @@ let nav = `
                         <li class="menu__item">
                             <a class="item__link" href="../03-css variables and js/index.html">css variables and js</a>
                         </li>
+                        <li class="menu__item">
+                            <a class="item__link" href="../04-Array Cardio/index.html">Array Cardio</a>
+                        </li>
                         <li class="menu__item dropdown__subItem">
                             <a class="item__link">3~10</a>
                             <ul class="dropdown__subMenu">
