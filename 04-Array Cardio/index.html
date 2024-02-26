@@ -33,7 +33,11 @@
 
     </script>
     <style>
-
+        .sbody{
+            display: flex;
+            flex-direction: column;
+            padding:5%;
+        }
     </style>
 </head>
 
@@ -42,6 +46,19 @@
 
 
     </header>
+    <div class="sbody">
+        <p><em>Psst: have a look at the JavaScript Console</em> 👉</p>
+
+        <h2>題目</h2>
+        <div>1. Filter the list of inventors for those who were born in the 1500's</div>
+        <div>2. Give us an array of the inventor first and last names</div>
+        <div>3. Sort the inventors by birthdate, oldest to youngest</div>
+        <div>4. How many years did all the inventors live?</div>
+        <div>5. Sort the inventors by years lived</div>
+        <div>6. create a list of Boulevards in Paris that contain 'de' anywhere in the name</div>
+        <div>7. sort Exercise：Sort the people alphabetically by last name</div>
+        <div>8. Reduce Exercise：Sum up the instances of each of these</div>
+            </div>
     <script>
         const inventors = [
             { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -128,10 +145,10 @@
         
         //7.sont Exercise
         // Sont the prple alphavetically by last name
-        const alpha1 = people.sort((lastOne,nextOne) => {
-            const [Last, First] = lastOne.split(', ');
-            console.log(Last, First);
-        })
+        // const alpha1 = people.sort((lastOne,nextOne) => {
+        //     const [Last, First] = lastOne.split(', ');
+        //     console.log(Last, First);
+        // })
         const alpha = people.sort((lastOne,nextOne) => {
             const [aLast, aFirst] = lastOne.split(', ');
             const [bLast, bFirst] = nextOne.split(', ');
