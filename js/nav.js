@@ -34,7 +34,7 @@ let nav = `
                                     <a class="item__link" href="../06-Type Ahead/index.html">Type Ahead</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="item__link">4</a>
+                                    <a class="item__link" href="../07-Array Cardio Day 2/index.html">Array Cardio Day 2</a>
                                 </li>
                                 <li class="menu__item">
                                     <a class="item__link">5</a>
