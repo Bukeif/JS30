@@ -8,6 +8,7 @@
         <script src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
 
         <title>Fun with HTML5 Canvas</title>
+        <link rel="icon" href="https://fav.farm/🐬" />
         <script>
                 
             document.addEventListener('DOMContentLoaded', function() {
@@ -63,7 +64,7 @@
             ctx.lineWidth = 100;
             // ctx.globalCompositeOperation = 'multiply';
             //https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation#examples
-            
+
 
             
             let isDrawing = false;
@@ -85,18 +86,18 @@
                 ctx.lineTo(e.offsetX, e.offsetY);
                 ctx.stroke();
                 [lastX, lastY] = [e.offsetX, e.offsetY];
-                hue++;
+                hue += 0.2;
                 if(hue >= 360){
                     hue = 0;
                 }
-                if(ctx.lineWidth >=500 || ctx.lineWidth <=1){
+                if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1){
                     direction = !direction;
                 }
 
                 if(direction){
-                    ctx.lineWidth++;
+                    ctx.lineWidth += 0.2;
                 }else{
-                    ctx.lineWidth--;
+                    ctx.lineWidth -= 0.2;
                 }
             }
             canvas.addEventListener('mousedown', (e) => {
