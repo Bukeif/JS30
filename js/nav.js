@@ -1,7 +1,7 @@
 let nav = `
 <nav class="nav container">
                     <div class="nav__data">
-                        <a href="#" class="nav__logo">
+                        <a href="../../index.html" class="nav__logo">
                             <i class="ri-bug-line"></i>JS30
                         </a>    
                         <div class="nav__toggle" id="nav--toggle">
