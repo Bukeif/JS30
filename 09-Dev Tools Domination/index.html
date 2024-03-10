@@ -107,7 +107,14 @@
             console.count('Steve');
             console.count('Steve');
             console.count('Steve');
+            function greet(name) {
+                console.count('greet() 被調用的次數');
+                return 'Hello, ' + name;
+            }
 
+            greet('Alice');
+            greet('Bob');
+            greet('Alice');
 
             // timing
             // const start = performance.now();
