@@ -102,6 +102,11 @@ let nav = `
                                             <i class="ri-javascript-line"></i> 12-Key Squence Detection
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="../13-Slide In on Scroll/index.html" class="dropdown__link">
+                                            <i class="ri-javascript-line"></i> 13-Slide In on Scroll
+                                        </a>
+                                    </li>
                                     
 
                                     <!-- DROPDOWN SUBMENU -->
