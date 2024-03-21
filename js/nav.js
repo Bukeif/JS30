@@ -107,6 +107,11 @@ let nav = `
                                             <i class="ri-javascript-line"></i> 13-Slide In on Scroll
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="../14-JavaScript References VS Copying/index.html" class="dropdown__link">
+                                            <i class="ri-javascript-line"></i> 14-JavaScript References VS Copying
+                                        </a>
+                                    </li>
                                     
 
                                     <!-- DROPDOWN SUBMENU -->
