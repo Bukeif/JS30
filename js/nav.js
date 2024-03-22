@@ -112,6 +112,11 @@ let nav = `
                                             <i class="ri-javascript-line"></i> 14-JavaScript References VS Copying
                                         </a>
                                     </li>
+                                    <li>
+                                        <a href="../15-LoaclStorage/index.html" class="dropdown__link">
+                                            <i class="ri-javascript-line"></i> 15-LoaclStorage
+                                        </a>
+                                    </li>
                                     
 
                                     <!-- DROPDOWN SUBMENU -->
