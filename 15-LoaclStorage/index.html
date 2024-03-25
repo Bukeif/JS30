@@ -65,8 +65,8 @@
                     <input type="submit" value="+ Add Item">
                 </form>
                 <div class="method">
-                    <input data-all=true class="allcheck" type="submit" value="+  ALL CHECK">
-                    <input data-all=false class="alldele" type="submit" value="-  ALL DELETE">
+                    <input data-selectall=true class="allcheck" type="submit" value="Select All">
+                    <input data-selectall=false class="alldele" type="submit" value="Deselect All">
                 </div>
 
             </div>
@@ -112,12 +112,13 @@
                 
             }
             
-            // 練了15堂 對於這樣簡潔的做法第一次自己嘗試，完全顛覆以前自己的技術
+            // 練了15堂 對於這樣簡潔的做法第一次自己嘗試，完全顛覆以前自己的技術，有點小開心呢XD終於有進步的感覺了
             function method(e){
                 const el = e.target;
-                const edata = JSON.parse(el.dataset.all); //dataset的值都是字串，因此透過JSON.parse將屬性轉換成布林值
+                const edata =  el.dataset.selectall === 'true'; //利用js == 特性讓字串與布林值做比較時轉換型態，後續拿到edata變數內容將會是轉換後的
                 // console.log(edata);
-                items.map((e) => {return e.done = edata})
+                items.forEach(item => item.done = edata);
+                // items.map((e) => {return e.done = edata})
                 localStorage.setItem('items', JSON.stringify(items));
                 populateList(items, itemsList);
                 
@@ -125,7 +126,7 @@
 
             addItems.addEventListener('submit', addItem);
             itemsList.addEventListener('click', toggleDone);
-            methods.forEach(allmet => allmet.addEventListener('click', method)),
+            methods.forEach(allmet => allmet.addEventListener('click', method));
             populateList(items, itemsList);
             
  
