@@ -81,16 +81,21 @@
         <script>
             const hero = document.querySelector('.hero');
             const text = document.querySelector('h1');
-            const walk = 500; //500px
+            const walk = 100; //100px
 
             function shadow(e) {
+                // console.log(e.srcElement.offsetWidth, e.srcElement.offsetHeight);
+                // console.log(e.target.offsetLeft, e.target.offsetTop);
+                
                 const { offsetWidth: width, offsetHeight: height } = hero
                 let { offsetX: x, offsetY: y } = e;
-                
+                // console.log('e.wh => ',width, height)
+                 
                 if (this !== e.target){
                     x =  x + e.target.offsetLeft;
                     y =  y + e.target.offsetTop;
                 }
+                // console.log('e.xy => ',x, y)
 
                 const xWalk = Math.round((x / width * walk) - (walk / 2));
                 const yWalk = Math.round((y / height * walk) - (walk / 2));
@@ -101,7 +106,6 @@
                 ${yWalk}px ${xWalk * -1}px 0 rgba(0,255,0,0.7),
                 ${yWalk * -1}px ${xWalk}px 0 rgba(0,0,255,0.7)
                 `;
-
 
             }
 
