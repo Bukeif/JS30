@@ -201,7 +201,7 @@ body{
   .dropdown__sublink{
     padding: 1.25rem 1.25rem 1.25rem 2.5rem;
     color: var(--white-color);
-    background-color: var(--black-color-light);
+    /* background-color: var(--black-color-light); */
     display: flex;
     align-items: center;
     column-gap: .5rem;
@@ -332,6 +332,23 @@ body{
     }
   }
 
+
+  .heighlight-nav-dropdown {
+    transition: all 0.2s;
+    border-bottom: 2px solid var(--black-color-light);
+    position: absolute;
+    top: 0%;
+    background: var(--black-color-light);
+    left: 0%;
+    z-index: 1;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.sbody {
+  z-index: -2;
+}
 
 
 

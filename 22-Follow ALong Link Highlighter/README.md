@@ -69,3 +69,19 @@ triggers.forEach(a => a.addEventListener('mouseenter', highlightLink))
 ```
 - 由於透過 `getBoundingClientRect()` 抓到的數值是基於 `用戶視窗` ，因此當網頁需捲動時 `highlight` 位置相會跑掉
 - 透過額外設定 `coords` ，將 `window.scrollX/Y` 與 `linkCoords` 在裡面做相加來獲取，當前元素在網頁的絕對位置
+
+---
+
+# 參考資料
+
+[參考](https://ithelp.ithome.com.tw/articles/10196679)
+
+`Element.getBoundingClientRect() `方法，會回傳一 `DOMRect` 物件，該物件中包含將該元素的大小，以及目前在可視區域中的位置的資料:
+- `DOMRect.top`：元素於目前可視範圍中，距離上方邊界的距離。
+- `DOMRect.bottom`：元素於目前可視範圍中，距離下方邊界的距離。
+- `DOMRect.left`：元素於目前可視範圍中，距離左邊邊界的距離。
+- `DOMRect.right`：元素於目前可視範圍中，距離右邊邊界的距離。
+- `DOMRect.x`：元素於目前可視範圍中，水平方向的座標。
+- `DOMRect.y`：元素於目前可視範圍中，垂直方向的座標。
+- `DOMRect.width`：元素的寬。
+- `DOMRect.height`：元素的高。
